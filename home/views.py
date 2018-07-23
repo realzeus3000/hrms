@@ -1,10 +1,8 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from . models import Announcement
 
 
 def index(request):
-   return render (request, 'home/index.html')
-
-
-# def index (request):
-#     return HttpResponse('<h1>This is the index page</h1>')
+    announcements = Announcement.objects.all()
+    context = {'announcements': announcements}
+    return render (request, 'home/index.html', context)
