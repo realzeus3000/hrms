@@ -6,13 +6,13 @@
 
     {% block content %}
 
-<div class="container">
+<div class="container backcolor">
   <div class="article">
   <div class="row">
     {% for announce in announcements %}
-    <div class="col-sm">
-      <div class="card text-center" style="width: 18rem;">
-        <div class="card-body">
+    <div class="col-sm sp-10">
+      <div class="card" style="width: 20rem; height:18rem">
+        <div class="card-body shad">
       <h5 class="card-title">{{announce.title}}</h5>
       <p class="card-text">{{announce.content}}</p>
       <p><h6>{{announce.create}}</h6></p>
