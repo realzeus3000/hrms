@@ -8,16 +8,16 @@
 
 <div class="container backcolor">
   <div class="article">
-  <div class="row">
+  <div class="row left-card">
     {% for announce in announcements %}
-    <div class="col-sm sp-10">
-      <div class="card" style="width: 20rem; height:18rem">
+    <div class="col- sp-15">
+      <div class="card" style="width: 21rem; height:18rem">
         <div class="card-body shad">
-      <h5 class="card-title">{{announce.title}}</h5>
+      <h4 class="card-title">{{announce.title}}</h4>
       <p class="card-text">{{announce.content}}</p>
       <p><h6>{{announce.create}}</h6></p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
+        <a href="#" class="btn btn-success">Read More....</a>
       </div>
     </div>
     {% endfor %}
