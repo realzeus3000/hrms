@@ -15,3 +15,20 @@ box-shadow: 24px 20px 10px 0px rgba(0,0,0,0.75);
 .left-card {
   padding-left: 20px;
 }
+
+.foo-pos {
+  text-align: center;
+  font-family: 'Merienda', cursive;
+}
+
+.fon-tit {
+  font-family: 'Eczar', serif;
+}
+
+.fon-cont {
+  font-family: 'Playfair Display', serif;
+}
+
+.fon-navbar {
+  font-family: 'El Messiri', sans-serif;
+}

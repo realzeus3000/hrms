@@ -13,8 +13,8 @@
     <div class="col- sp-15">
       <div class="card" style="width: 21rem; height:18rem">
         <div class="card-body shad">
-      <h4 class="card-title">{{announce.title}}</h4>
-      <p class="card-text">{{announce.content}}</p>
+      <h4 class="card-title fon-tit">{{announce.title}}</h4><br>
+      <p class="card-text fon-cont">{{announce.content | truncatewords:15}}</p><br>
       <p><h6>{{announce.create}}</h6></p>
         </div>
         <a href="#" class="btn btn-success">Read More....</a>
