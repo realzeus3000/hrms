@@ -4,6 +4,9 @@
 
 .backcolor {
   background-color: #e0e0e0;
+  -webkit-box-shadow: 2px 0px 20px 12px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 0px 20px 12px rgba(0,0,0,0.75);
+  box-shadow: 2px 0px 20px 12px rgba(0,0,0,0.75);
 }
 
 .shad {
@@ -31,4 +34,5 @@ box-shadow: 24px 20px 10px 0px rgba(0,0,0,0.75);
 
 .fon-navbar {
   font-family: 'El Messiri', sans-serif;
+  font-size: 20px;
 }
