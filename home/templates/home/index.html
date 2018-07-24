@@ -17,7 +17,10 @@
       <p class="card-text fon-cont">{{announce.content | truncatewords:15}}</p><br>
       <p><h6>{{announce.create}}</h6></p>
         </div>
-        <a href="#" class="btn btn-success">Read More....</a>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#PostReview">
+          Read More...
+        </button>
       </div>
     </div>
     {% endfor %}
@@ -26,3 +29,4 @@
 </div>
 
     {% endblock %}
+{% include "home/post-review.html" %}
