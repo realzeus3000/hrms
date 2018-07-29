@@ -8,12 +8,16 @@
   -webkit-box-shadow: 2px 0px 20px 12px rgba(0,0,0,0.75);
   -moz-box-shadow: 2px 0px 20px 12px rgba(0,0,0,0.75);
   box-shadow: 2px 0px 20px 12px rgba(0,0,0,0.75);
+  border-radius: 28px 28px 28px 28px;
+  -moz-border-radius: 28px 28px 28px 28px;
+  -webkit-border-radius: 28px 28px 28px 28px;
+  border: 0px solid #000000;
 }
 
 .shad {
   -webkit-box-shadow: 24px 20px 10px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 24px 20px 10px 0px rgba(0,0,0,0.75);
-box-shadow: 24px 20px 10px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 24px 20px 10px 0px rgba(0,0,0,0.75);
+  box-shadow: 24px 20px 10px 0px rgba(0,0,0,0.75);
 }
 
 .left-card {
@@ -21,8 +25,17 @@ box-shadow: 24px 20px 10px 0px rgba(0,0,0,0.75);
 }
 
 .foo-pos {
+  font-size: 15px ;
   text-align: center;
   font-family: 'Merienda', cursive;
+  background-color: #e0e0e0;
+  -webkit-box-shadow: 0px 0px 23px 10px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 23px 10px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 23px 10px rgba(0,0,0,0.75);
+  border-radius: 28px 28px 28px 28px;
+  -moz-border-radius: 28px 28px 28px 28px;
+  -webkit-border-radius: 28px 28px 28px 28px;
+  border: 0px solid #000000;
 }
 
 .fon-tit {
@@ -36,4 +49,8 @@ box-shadow: 24px 20px 10px 0px rgba(0,0,0,0.75);
 .fon-navbar {
   font-family: 'El Messiri', sans-serif;
   font-size: 20px;
+}
+
+.details_post{
+  padding: 30px;
 }

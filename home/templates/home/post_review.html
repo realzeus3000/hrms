@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block head %}
+  <title>Details</title>
+{% endblock %}
+
+{% block content %}
+<div class="details_post">
+  <div class="jumbotron">
+    <h1 class="display-4 fon-tit">{{post.title}}</h1>
+    <p class="lead fon-cont">{{post.content}}</p>
+    <hr class="my-4">
+    <p>{{post.create}}</p>
+    <a class="btn btn-primary btn-lg" href="{% url 'home' %}" role="button">Back</a>
+  </div>
+</div>
+
+
+{% endblock %}
