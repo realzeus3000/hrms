@@ -1,10 +1,10 @@
 from django.db import models
-# from django.contrib.auth.models import User
+from django.contrib.auth.models import User
 from django.utils.text import slugify
 import datetime
 
 class Announcement(models.Model):
-    #user = models.ForeignKey(User, on_delete=models.CASCADE, default='User')
+    user = models.ForeignKey(User, on_delete=models.CASCADE, default=None)
     title = models.CharField(blank=True, max_length=100)
     slug = models.SlugField(null=True, blank=True)
     content = models.TextField(blank=True)
