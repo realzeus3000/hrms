@@ -19,69 +19,81 @@
 
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav fon-navbar">
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="{% url 'home' %}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Announcement
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Add Announcement</a>
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Volunteer
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Add Volunteer</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Search Volunteer</a>
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          projects
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Add projects</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Search projects</a>
-        </div>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav fon-navbar">
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Paths
+            Announcement
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Add Paths</a>
+            <a class="dropdown-item" href="{% url 'home' %}">List Announcement</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Search Paths</a>
+            <a class="dropdown-item" href="#">Add Announcement</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Volunteer
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">List Volunteer</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Add Volunteer</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Search Volunteer</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            projects
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">List Projects</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Add projects</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Search projects</a>
           </div>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Teams
+              Paths
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Add Teams</a>
+              <a class="dropdown-item" href="#">List Paths</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Search Teams</a>
+              <a class="dropdown-item" href="#">Add Paths</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Search Paths</a>
             </div>
-          </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Login</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Teams
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">List Teams</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Add Teams</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Search Teams</a>
+              </div>
+            </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Login</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+    </header>
 <br>
 {% block content %}
 {% endblock %}

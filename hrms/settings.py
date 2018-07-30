@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'paths',
     'teams',
     'home',
-    'login',
+    'accounts',
 ]
 
 MIDDLEWARE = [
