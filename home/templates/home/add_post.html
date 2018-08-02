@@ -1,10 +1,15 @@
-{% include "base.html" %}
+{% extends "base.html" %}
 
-{% block head  %}
-  <title>Add Announcement</title>
-{% endblock %}
+  {% block head  %}
+    <title>Add Announcement</title>
+  {% endblock %}
 
-{% block content %}
-{% csrf_token %}
-  {{form}}
-{% endblock %}
+  {% block content %}
+  <form class="site-form" action="{% url 'post_added' %}" method="post">
+    {% csrf_token %}
+    <div class="container backcolor form-style">
+        {{form}}
+      <button type="submit" class="btn btn-primary right">Add</button>
+    </div>
+  </form>
+  {% endblock %}

@@ -1,7 +1,7 @@
 from django import forms
-from . models import Announcement
+from .  import models
 
-# class AddPost(forms.ModelForm):
-#     class Meta:
-#         model = Announcement
-#         fields = ['title', 'content']
+class AddPost(forms.ModelForm):
+    class Meta:
+        model = models.Announcement
+        fields = ['title', 'content']

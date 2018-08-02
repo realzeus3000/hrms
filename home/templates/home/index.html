@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
     {% block head %}
-    <title>Home Page</title>
+    <title>H.R.M.S.</title>
     {% endblock %}
 
     {% block content %}
@@ -10,6 +10,9 @@
   <div class="article">
   <div class="row left-card">
     {% for announce in announcements %}
+    {% if Announcement.active %}
+      pass
+    {% else %}
     <div class="col- sp-15">
       <div class="card" style="width: 21rem; height:18rem">
         <div class="card-body shad">
@@ -22,6 +25,7 @@
         </a>
       </div>
     </div>
+    {% endif %}
     {% endfor %}
   </div>
   </div>

@@ -34,7 +34,7 @@
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="{% url 'home' %}">List Announcement</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Add Announcement</a>
+            <a class="dropdown-item" href="{% url 'post_added' %}">Add Announcement</a>
           </div>
         </li>
         <li class="nav-item dropdown">
@@ -98,10 +98,9 @@
 {% block content %}
 {% endblock %}
 <br>
-</body>
+</body style="background-color: #841A5E;">
 <footer>
   <div class="container foo-pos">
-    <br>
     <p>HRMS</p>
     <p>Code For Iraq</p>
   </div>
