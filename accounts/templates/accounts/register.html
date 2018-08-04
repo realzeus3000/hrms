@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block head %}
+  <title>Register</title>
+{% endblock %}
+
+{% block content %}
+  <form class="container register-style" action="/accounts/register/" method="post">
+{% csrf_token %}
+    {{form}}
+    <input type="submit" class="register-btn"  value="Register">
+  </form>
+{% endblock %}

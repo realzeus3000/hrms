@@ -14,15 +14,15 @@
       pass
     {% else %}
     <div class="col- sp-15">
-      <div class="card" style="width: 21rem; height:18rem">
+      <div class="card card-style">
         <div class="card-body shad">
       <h4 class="card-title fon-tit">{{announce.title}}</h4><br>
-      <p class="card-text fon-cont">{{announce.content | truncatewords:15}}</p><br>
+      <p class="card-text fon-cont">{{announce.content | truncatewords:10}}</p><br>
       <p><h6>{{announce.create}}</h6></p>
+      <a class="btn btn-primary btn-position" href="{% url 'post_detail' slug=announce.slug %}" role="button">
+        Read More...
+      </a>
         </div>
-        <a class="btn btn-primary" href="{% url 'post_detail' slug=announce.slug %}" role="button">
-          Read More...
-        </a>
       </div>
     </div>
     {% endif %}

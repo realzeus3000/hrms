@@ -30,6 +30,19 @@
   -webkit-box-shadow: 24px 20px 10px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 24px 20px 10px 0px rgba(0,0,0,0.75);
   box-shadow: 24px 20px 10px 0px rgba(0,0,0,0.75);
+  border-radius: 28px 28px 28px 28px;
+  -moz-border-radius: 28px 28px 28px 28px;
+  -webkit-border-radius: 28px 28px 28px 28px;
+  border: 0px solid #000000;
+}
+
+.card-style {
+  width: 21rem;
+  height:20rem;
+  border-radius: 28px 28px 28px 28px;
+  -moz-border-radius: 28px 28px 28px 28px;
+  -webkit-border-radius: 28px 28px 28px 28px;
+  border: 0px solid #000000;
 }
 
 .left-card {
@@ -75,10 +88,64 @@
   padding: 10px;
 }
 
-/* .right {
-  float: right;
+.logout-btn {
+  background-color: #f44336;
+  border-radius: 12px;
+  color: black;
+  padding: 5px 16px;
+  font-size: 16px;
+  position: absolute;
+  left: 90%;
+}
+
+.login-style {
+  display: block;
+  margin: auto;
+  width: 425px;
+  padding: 100px;
+  background-color: #81ecec;
+  border-radius: 28px 28px 28px 28px;
+  -moz-border-radius: 28px 28px 28px 28px;
+  -webkit-border-radius: 28px 28px 28px 28px;
+}
+
+.register-style {
+  display: block;
+  margin: auto;
+  width: 700px;
+  padding: 100px;
+  background-color: #81ecec;
+  border-radius: 28px 28px 28px 28px;
+  -moz-border-radius: 28px 28px 28px 28px;
+  -webkit-border-radius: 28px 28px 28px 28px;
+}
+
+/* .register-btn {
+  position: absolute;
+  left: 30%;
 } */
 
 .form-style {
   padding: 10px;
+  width: 800px;
+}
+
+.btn-position {
+  position: absolute;
+  top: 80%;
+  border-radius: 0.5rem;
+}
+
+register-btn:link, register-btn:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+register-btn:hover, register-btn:active {
+    background-color: red;
 }

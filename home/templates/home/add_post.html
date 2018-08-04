@@ -5,11 +5,12 @@
   {% endblock %}
 
   {% block content %}
-  <form class="site-form" action="{% url 'post_added' %}" method="post">
-    {% csrf_token %}
-    <div class="container backcolor form-style">
-        {{form}}
-      <button type="submit" class="btn btn-primary right">Add</button>
-    </div>
-  </form>
+    <form class="site-form" action="{% url 'post_added' %}" method="post">
+      {% csrf_token %}
+      <div class="container backcolor form-style">
+          {{form}}
+        <button type="submit" class="btn btn-primary right">Add</button>
+      </div>
+    </form>
+
   {% endblock %}
