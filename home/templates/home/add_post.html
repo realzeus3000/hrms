@@ -5,6 +5,9 @@
   {% endblock %}
 
   {% block content %}
+  <div class="alert alert-primary" role="alert">
+  {{msg}}
+</div>
     <form class="site-form" action="{% url 'post_added' %}" method="post">
       {% csrf_token %}
       <div class="container backcolor form-style">

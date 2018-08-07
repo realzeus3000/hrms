@@ -96,8 +96,11 @@
           </form>
         </li>
         {% else %}
-        <li class="nav-item register-btn">
+        <li class="nav-item">
+          <div class="register-btn">
           <a href="{% url 'register' %}">Register</a>
+          <a href="{% url 'login' %}">Login</a>
+        </div>
         </li>
         {% endif %}
       </ul>

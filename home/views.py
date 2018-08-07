@@ -27,5 +27,6 @@ def add_post(request):
             return redirect('home')
     else:
         form = forms.AddPost()
-    context = {'form': form}
+        msg='Problem in Data'
+    context = {'form': form, 'msg': msg}
     return render(request,'home/add_post.html', context )
